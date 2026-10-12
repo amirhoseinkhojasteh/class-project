@@ -1,0 +1,62 @@
+{
+    "courses": [
+        {
+            "id": 1001,
+            "name": "java",
+            "units": 4
+        },
+        {
+            "id": 1002,
+            "name": "c#",
+            "units": 3
+        },
+        {
+            "id": 1003,
+            "name": "py",
+            "units": 4
+        }
+    ],
+    "students": [
+        {
+            "id": 2001,
+            "name": "ali",
+            "family": "rezaie",
+            "courses":[[1001,17],[1002,0]]
+        },
+        {
+            "id": 2002,
+            "name": "reza",
+            "family": "alinia",
+            "courses":[[1002,8]]
+        },
+        {
+            "id": 2003,
+            "name": "ahmad",
+            "family": "hoseini",
+            "courses":[[1002,15],[1003,11]]
+        }
+    ],
+    "teachers": [
+        {
+            "id": 3001,
+            "name": "alireza",
+            "family": "ahmadi",
+            "grade": "HTP",
+            "courses":[1001,1002]
+        },
+        {
+            "id": 3002,
+            "name": "alinia",
+            "family": "mohammadi",
+            "grade": "BSC",
+            "courses":[1003]
+        },
+        {
+            "id": 3003,
+            "name": "mohammad",
+            "family": "ahmadi",
+            "grade": "MSC",
+            "courses":[1001,1003]
+        }
+    ]
+}
