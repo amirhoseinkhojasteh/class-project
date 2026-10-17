@@ -1,1 +1,1 @@
-# school sama
+# Sama school
