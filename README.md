@@ -26,9 +26,30 @@ Sama School provides a classroom management feature that allows users to create 
 |grade|The grade assigned to the teacher.|
 |courses|A list of courses taught by the teacher.|
 
-- # courses
+- # Course
 | property | description |
 | --- |---|
 |ID|A unique identifier assigned to each course.|
 |name|The name of the course.|
 |units|The number of academic units assigned to the course.|
+
+- # School
+| property | description |
+| --- |---|
+|name|The name of the school.|
+|courses|A list of courses available in the school.|
+|teacher|A list of teachers working at the school.|
+|student|A list of students registered at the school.|
+|classrooms|A list of classrooms created in the school.|
+|selected_student|The currently selected student, or None if no student is selected.|
+|selected_teacher|The currently selected teacher, or None if no teacher is selected.|
+|selected_course|The currently selected course, or None if no course is selected.|
+
+- # Classroom
+| property | description |
+| --- |---|
+|ID|A unique identifier assigned to each classroom.|
+|name|The name of the classroom.|
+|course|The course assigned to the classroom, or None if no course is assigned.|
+|teacher|The teacher assigned to the classroom, or None if no teacher is assigned.|
+|student|A list of students assigned to the classroom.|
