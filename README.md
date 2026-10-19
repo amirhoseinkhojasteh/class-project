@@ -53,3 +53,48 @@ Sama School provides a classroom management feature that allows users to create 
 |course|The course assigned to the classroom, or None if no course is assigned.|
 |teacher|The teacher assigned to the classroom, or None if no teacher is assigned.|
 |student|A list of students assigned to the classroom.|
+#
+
+
+# How is works:
+When the program runs, a menu is displayed, allowing users to choose different options to manage students, teachers, courses, and classrooms. Users can select an option by entering its corresponding number and follow the instructions to perform the desired operation.
+
+```
+1.student
+2.teacher
+3.courses
+4.classrooms
+5.save
+0.exit
+```
+- Option 1: Opens the Student Menu.
+- Option 2: Opens the Teacher Menu.
+- Option 3: Opens the Course Menu.
+- Option 4: Opens the Classroom Menu.
+- Option 5: Saves the changes made to the system.
+- Option 0: Exits the program.
+- #
+
+## Exaple:
+### Student Menu
+The Student Menu allows users to manage student information through the following options:
+```
+1.print students
+2.add student
+3.edit student
+4.delete student
+5.select student
+0.back
+```
+
+- Option 1: Displays the list of students.
+- Option 2: Adds a new student.
+- Option 3: Edits an existing student's information.
+- Option 4: Deletes a student.
+- Option 5: Selects a student.
+- Option 0: Returns to the Main Menu.
+- #
+
+Other Menus:
+
+The Teacher Menu and Course Menu follow the same structure as the Student Menu. Each menu provides options to display, add, edit, and delete records related to its respective section.
