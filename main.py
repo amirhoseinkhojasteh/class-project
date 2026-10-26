@@ -1,5 +1,8 @@
 import json
 import copy
+from colorama import Fore, Style, init
+
+init(autoreset=True)
 
 class Course:
     id:int=0
@@ -98,7 +101,7 @@ class School:
         
     def add_student(self,student:Student):
         if student in self.students:
-            print("already exit")
+            print(Fore.RED +"already exit")
         else:
             self.students.append(student)
             
