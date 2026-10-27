@@ -107,19 +107,19 @@ class School:
             
     def add_teacher(self,teacher:Teacher):
         if teacher in self.teachers:
-            print("already exit")
+            print(Fore.RED +"already exit")
         else:
             self.teachers.append(teacher)
             
     def add_course(self,course:Course):
         if course in self.courses:
-            print("already exit")
+            print(Fore.RED+"already exit")
         else:
             self.courses.append(course)
 
     def add_classroom(self,classroom:Classroom):
         if classroom in self.classrooms:
-            print("already exit")
+            print(Fore.RED+"already exit")
         else:
             self.classrooms.append(classroom)
 
@@ -132,11 +132,11 @@ class School:
             if id in self.students:
                 self.students.remove(id)
             else:
-                print("dosent exit")
+                print(Fore.YELLOW+ "dosent exit")
 
     def edit_student(self,student:Student):
         if student not in self.students:
-            print("doesent exit")
+            print(Fore.YELLOW+"doesent exit")
         else:
             k=self.students.index(student)
             self.students[k].name=student.name
@@ -151,11 +151,11 @@ class School:
         if id in self.teachers:
             self.teachers.remove(id)
         else:
-            print("dosent exit")
+            print(Fore.YELLOW+"dosent exit")
 
     def edit_teacher(self,teacher:Teacher):
         if teacher not in self.teachers:
-            print("doesent exit")
+            print(Fore.YELLOW+"doesent exit")
         else:
             k=self.teachers.index(teacher)
             self.teachers[k].name=teacher.name
@@ -171,11 +171,11 @@ class School:
             if id in self.courses:
                 self.courses.remove(id)
             else:
-                print("dosent exit")
+                print(Fore.YELLOW+"dosent exit")
                 
     def edit_course(self,course:Course):
         if course not in self.courses:
-            print("doesent exit")
+            print(Fore.YELLOW+"doesent exit")
         else:
             k=self.courses.index(course)
             self.courses[k].name=course.name
@@ -256,8 +256,8 @@ while True:
         print("2.teachers")
         print("3.courses")
         print("4.classrooms")
-        print("5.save")
-        print("0.exit")
+        print(Fore.GREEN+"5.save")
+        print(Fore.RED+"0.exit")
         cmd=int(input(")):"))
         if cmd==1:
             level="students"
@@ -278,7 +278,7 @@ while True:
         print("3.edit student")
         print("4.delete student")
         print("5.select student")
-        print("0.back")
+        print(Style.BRIGHT+"0.back")
         cmd=int(input(")):"))
 
         if cmd==1:
@@ -316,7 +316,7 @@ while True:
         print("2.add course")
         print("3.remove course")
         print("4.set scores")
-        print("0.back")
+        print(Style.BRIGHT+"0.back")
         cmd=int(input(":))"))
         if cmd==1:
             print("id:",sc1.selected_student.id)
@@ -356,7 +356,7 @@ while True:
         print("3.edit teacher")
         print("4.delete teacher")
         print("5.select teacher")
-        print("0.back")
+        print(Style.BRIGHT+"0.back")
         cmd=int(input(")):"))
         
         if cmd==1:
@@ -393,7 +393,7 @@ while True:
         print("1.show info")
         print("2.add course")
         print("3.remove course")
-        print("0.back") 
+        print(Style.BRIGHT+"0.back") 
         cmd=int(input(":))"))
         if cmd==1:
             print("id:",sc1.selected_teacher.id)
@@ -431,7 +431,7 @@ while True:
         print("3.edit course")
         print("4.delete course")
         print("5.select course")
-        print("0.back")   
+        print(Style.BRIGHT+"0.back")   
         cmd=int(input(")):"))
         
         if cmd==1:
@@ -465,7 +465,7 @@ while True:
         print("3.edit classroom")
         print("4.delete classroom")
         print("5.select classroom")
-        print("0.back")
+        print(Style.BRIGHT+"0.back")
         cmd=int(input(")):"))
         if cmd==1:
             pass
