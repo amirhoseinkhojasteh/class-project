@@ -302,7 +302,7 @@ while True:
             sc1.print_students()
             id=int(input("id:"))
             if sc1.students.count(id)==0:
-                print("this is not exit")
+                print(Style.BRIGHT+"this is not exit")
             else:
                 k=sc1.students.index(id)
                 sc1.selected_student=sc1.students[k]
@@ -331,7 +331,7 @@ while True:
                     print(course.id,course.name,course.unit)
             id=int(input("id:"))
             if sc1.courses.count(id)==0: 
-                print("this is not exit")
+                print(Style.BRIGHT+"this is not exit")
             else:
                 k=sc1.courses.index(id)
                 sc1.selected_student.courses.append(sc1.courses[k])
@@ -382,7 +382,7 @@ while True:
             sc1.print_teacher()
             id=int(input("id:"))
             if sc1.teachers.count(id)==0:
-                print("this is not exit")
+                print(Style.BRIGHT+"this is not exit")
             else:
                 k=sc1.teachers.index(id)
                 sc1.selected_teacher=sc1.teachers[k]
@@ -409,7 +409,7 @@ while True:
                     print(course.id,course.name,course.unit) 
             id=int(input("id:"))
             if sc1.courses.count(id)==0:
-                print("this is not exit")
+                print(Style.BRIGHT+"this is not exit")
             else:
                 k=sc1.courses.index(id)
                 sc1.selected_teacher.courses.append(sc1.courses[k])
@@ -476,7 +476,7 @@ while True:
                 print(course.id,course.name,course.unit) 
             id=int(input("id:"))
             if sc1.courses.count(id)==0:
-                print("this is not exit")
+                print(Style.BRIGHT+"this is not exit")
             else:
                 k=sc1.courses.index(id)
                 sc1.selected_course=sc1.courses[k]
