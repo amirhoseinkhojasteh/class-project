@@ -278,7 +278,7 @@ while True:
         print("3.edit student")
         print("4.delete student")
         print("5.select student")
-        print(Style.BRIGHT+"0.back")
+        print(Fore.RED+"0.back")
         cmd=int(input(")):"))
 
         if cmd==1:
@@ -316,7 +316,7 @@ while True:
         print("2.add course")
         print("3.remove course")
         print("4.set scores")
-        print(Style.BRIGHT+"0.back")
+        print(Fore.RED+"0.back")
         cmd=int(input(":))"))
         if cmd==1:
             print("id:",sc1.selected_student.id)
@@ -356,7 +356,7 @@ while True:
         print("3.edit teacher")
         print("4.delete teacher")
         print("5.select teacher")
-        print(Style.BRIGHT+"0.back")
+        print(Fore.RED+"0.back")
         cmd=int(input(")):"))
         
         if cmd==1:
@@ -393,7 +393,7 @@ while True:
         print("1.show info")
         print("2.add course")
         print("3.remove course")
-        print(Style.BRIGHT+"0.back") 
+        print(Fore.RED+"0.back") 
         cmd=int(input(":))"))
         if cmd==1:
             print("id:",sc1.selected_teacher.id)
@@ -431,7 +431,7 @@ while True:
         print("3.edit course")
         print("4.delete course")
         print("5.select course")
-        print(Style.BRIGHT+"0.back")   
+        print(Fore.RED+"0.back")   
         cmd=int(input(")):"))
         
         if cmd==1:
@@ -465,7 +465,7 @@ while True:
         print("3.edit classroom")
         print("4.delete classroom")
         print("5.select classroom")
-        print(Style.BRIGHT+"0.back")
+        print(Fore.RED+"0.back")
         cmd=int(input(")):"))
         if cmd==1:
             pass
